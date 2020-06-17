@@ -1574,7 +1574,7 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, i
 
 	if (base.mode & ATTR_REVERSE) {
 		temp = fg;
-		fg = bg;
+		fg = &dc.col[0];
 		bg = temp;
 	}
 
